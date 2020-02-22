@@ -24,6 +24,6 @@ public class FilterSteps {
     @Then("^I should be able to see product rating \"([^\"]*)\"$")
     public void i_should_be_able_to_see_refined_results_review(double expected) {
         List<Double> actual = resultsPage.getProductRating();
-        assertThat(actual, everyItem(is(greaterThan(expected))));
+        assertThat(actual, everyItem(is(greaterThanOrEqualTo(expected))));
     }
 }
