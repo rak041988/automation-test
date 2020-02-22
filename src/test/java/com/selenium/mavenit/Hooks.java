@@ -14,7 +14,7 @@ public class Hooks {
         driverManager.applyImpcitWait();
     }
 
-    @After
+   // @After
     public void tearDown(){
         driverManager.closeBrowser();
     }

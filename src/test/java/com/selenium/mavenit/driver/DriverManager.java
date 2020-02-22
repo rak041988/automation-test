@@ -6,10 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class DriverManager {
 
 
-    private static WebDriver driver;
+    public static WebDriver driver;
     private String browser = "";
 
     public void openBrowser() {
@@ -33,7 +35,7 @@ public class DriverManager {
     }
 
     public void applyImpcitWait() {
-
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     public void navigateTo(String url) {
