@@ -45,4 +45,12 @@ public class DriverManager {
     public void closeBrowser() {
         driver.quit();
     }
+
+    public void sleep(int ms){
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

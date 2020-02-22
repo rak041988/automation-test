@@ -13,6 +13,5 @@ public class HomePage extends DriverManager {
     public void doSearch(String item){
         driver.findElement(By.cssSelector("input[data-test='search-input']")).sendKeys(item);
         driver.findElement(By.cssSelector("input[data-test='search-input']")).sendKeys(Keys.ENTER);
-
     }
 }
