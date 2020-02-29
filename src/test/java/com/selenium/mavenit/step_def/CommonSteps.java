@@ -21,4 +21,6 @@ public class CommonSteps {
     public void i_search_for_product(String searchTerm) {
         homPage.doSearch(searchTerm);
     }
+    hjkg sa
+            lkhiusa
 }
